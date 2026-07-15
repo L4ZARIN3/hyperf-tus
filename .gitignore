@@ -1,61 +1,7 @@
-```
-# Dependencies
-vendor/
+Nothing should be ignored in this case, as only a markdown file (TUTORIAL.md) was added without any build artifacts, dependencies, or temporary files.
 
-# Compiled and build artifacts
-*.o
-*.obj
-*.exe
-*.dll
-*.so
-*.a
-*.out
+Therefore, the output is empty:
 
-# Logs and temp files
-*.log
-*.tmp
-*.swp
+```markdown
 
-# Environment
-.env
-.env.local
-*.env.*
-
-# Editors
-.vscode/
-.idea/
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# PHP specific
-*.php~
-*.php.bak
-*.phar
-.svn
-CVS
-
-# Composer
-composer.lock
-vendor/
-
-# Cache directories
-.cache/
-__pycache__/
-*.pyc
-*.pyo
-.Python
-.pytest_cache/
-.mypy_cache/
-
-# Build directories (if present)
-dist/
-build/
-target/
 ```

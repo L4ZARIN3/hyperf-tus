@@ -1,0 +1,52 @@
+{
+    "name": "lazarini/hyperf-tus",
+    "description": "Complete TUS protocol implementation for Hyperf 3.2 - Resumable file uploads",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "hyperf",
+        "tus",
+        "upload",
+        "resumable",
+        "file-upload",
+        "swoole",
+        "openswoole"
+    ],
+    "require": {
+        "php": "^8.4",
+        "hyperf/framework": "^3.2",
+        "hyperf/http-server": "^3.2",
+        "hyperf/config": "^3.2",
+        "psr/http-message": "^1.1 || ^2.0",
+        "psr/http-server-middleware": "^1.0",
+        "psr/container": "^1.0 || ^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "mockery/mockery": "^1.6",
+        "friendsofphp/php-cs-fixer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lazarini\\HyperfTus\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lazarini\\HyperfTus\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Lazarini\\HyperfTus\\ConfigProvider::class"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Lazarini",
+            "email": "lazarini@example.com"
+        }
+    ]
+}

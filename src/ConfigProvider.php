@@ -19,7 +19,7 @@ class ConfigProvider
             'dependencies' => $this->getDependencies(),
             'commands' => $this->getCommands(),
             'annotations' => $this->getAnnotations(),
-            'publish' => $this->getPublish(),
+            'publishable' => $this->getPublish(),
         ];
     }
 

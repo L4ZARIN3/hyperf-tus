@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Lazarini\HyperfTus;
 
 use Lazarini\HyperfTus\Command\CleanCommand;
-use Lazarini\HyperfTus\ConfigProvider as TusConfigProvider;
 use Lazarini\HyperfTus\Controller\TusController;
 use Lazarini\HyperfTus\Middleware\TusMiddleware;
 
@@ -61,7 +60,7 @@ class ConfigProvider
                 'id' => 'config',
                 'description' => 'TUS configuration file',
                 'source' => __DIR__ . '/publish/tus.php',
-                'destination' => BASE_PATH . '/config/autoload/tus.php',
+                'destination' => 'config/autoload/tus.php',
             ],
         ];
     }
